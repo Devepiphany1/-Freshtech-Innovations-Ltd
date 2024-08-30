@@ -1,0 +1,1 @@
+This contains all the Reacts files for the Freshtech Innovations Ltd coding exercise for a frontend role
