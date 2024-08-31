@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Subsum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fb;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 900px;
+            width: 100%;
+        }
+        .sidebar {
+            background-color: #3945d6;
+            color: white;
+            padding: 20px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .sidebar h1 {
+            margin: 0;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 20px 0;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .sidebar ul li i {
+            margin-right: 10px;
+        }
+        .sidebar p {
+            font-size: 14px;
+            margin: 0;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .login-section {
+            flex-grow: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .login-section h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .login-section .google-login {
+            background-color: #4285f4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-section .google-login img {
+            margin-right: 10px;
+        }
+        .login-section .separator {
+            margin: 20px 0;
+            text-align: center;
+            color: #aaa;
+        }
+        .login-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-section input[type="email"], .login-section input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .login-section .options {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .login-section .options label {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+        .login-section .options label input {
+            margin-right: 5px;
+        }
+        .login-section .options a {
+            color: #4285f4;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .login-section button {
+            background-color: #3945d6;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <h1>Subsum</h1>
+        <ul>
+            <li>Dashboard</li>
+            <li>Buy Airtime</li>
+            <li>Buy Data</li>
+            <li>TV Subscription</li>
+            <li>Pay Electric Bill</li>
+            <li>Transaction History</li>
+            <li>Help & Support</li>
+        </ul>
+        <p>The BEST place to subscribe / buy</p>
+    </div>
+    <div class="login-section">
+        <h2>Login</h2>
+        <button class="google-login">
+            <img src="https://img.icons8.com/color/16/000000/google-logo.png"/> Login with Google
+        </button>
+        <div class="separator">Or continue with</div>
+        <form action="#">
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <div class="options">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="#">Recover Password</a>
+            </div>
+            <button type="submit">Log in</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
